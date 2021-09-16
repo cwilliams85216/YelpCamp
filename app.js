@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV !== "production") { // to use secret in our .env for images
     require('dotenv').config();
 }
-https://git.heroku.com/calm-shore-45357.git
+//https://git.heroku.com/calm-shore-45357.git
 
 
 const express = require('express');
@@ -172,7 +172,8 @@ app.use((err, req, res, next) => {
     
 })
 
-app.listen(3000, () => {
-    console.log('Listening on port 3000')
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`)
 })
 
