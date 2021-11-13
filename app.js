@@ -1,8 +1,7 @@
 if (process.env.NODE_ENV !== "production") { // to use secret in our .env for images
     require('dotenv').config();
 }
-//https://git.heroku.com/calm-shore-45357.git
-//https://calm-shore-45357.herokuapp.com/campgrounds
+
 
 
 const express = require('express');
